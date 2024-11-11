@@ -120,7 +120,7 @@ Part 8 - 🚀 Level Up
 It turns out the cafe never served the item “Fish Tacos”. Select the Past Menu Items list and remove “Fish Tacos” from it. Hint: You’ll have to cache both the “Fish Tacos” list item element as well as it’s parent, then use the removeChild() method on the parent to remove the cached <li> element.\
 */
 
-const fishTacosEl = document.querySelector("#past-menu-items:nth-of-type(2)")
+const fishTacosEl = document.querySelector("#past-menu-items").children[1]
 
 console.log(fishTacosEl);
 
